@@ -1,13 +1,14 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Navigation from "./components/header/Navigation";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <Header />
-      <h1>Hello1</h1>
+      <Home />
+
       <Footer />
     </div>
   );

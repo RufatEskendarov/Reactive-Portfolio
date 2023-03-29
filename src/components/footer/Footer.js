@@ -1,5 +1,9 @@
 import "./Footer.css";
 
+import gitHub from "./../../img/logo/gitHub.svg";
+import linkedIn from "./../../img/logo/linkedIn.svg";
+import twitter from "./../../img/logo/twitter.svg";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -17,7 +21,7 @@ function Footer() {
             <li className="social__item">
               <a href="https://github.com/RufatEskendarov?tab=repositories">
                 <img
-                  src="./img/icons/gitHub.svg"
+                  src={gitHub}
                   alt="logo with the link to github repository"
                 />
               </a>
