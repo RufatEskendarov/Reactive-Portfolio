@@ -1,23 +1,20 @@
+import "./Navigation.css";
+
+import sun from "./../../img/logo/sun.svg";
+import moon from "./../../img/logo/moon.svg";
+
 function Navigation() {
   return (
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
           <a href="./index.html" className="logo">
-            <strong>Freelancer</strong> portfolio
+            <strong>Reactiv</strong> portfolio
           </a>
 
           <button className="dark-mode-btn">
-            <img
-              src="./img/icons/sun.svg"
-              alt="Light mode"
-              className="dark-mode-btn__icon"
-            />
-            <img
-              src="./img/icons/moon.svg"
-              alt="Dark mode"
-              className="dark-mode-btn__icon"
-            />
+            <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
+            <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
           </button>
 
           <ul className="nav-list">
