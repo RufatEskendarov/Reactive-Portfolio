@@ -1,3 +1,10 @@
+import cooking from "./../img/project-img/whats-cooking.png";
+import mapty from "./../img/project-img/mapty.PNG";
+import pig_game from "./../img/project-img/pig_game.PNG";
+import bankist from "./../img/project-img/bankist.PNG";
+import guess from "./../img/project-img/Guess-my.PNG";
+import forkify from "./../img/project-img/forkify.PNG";
+
 function Projects() {
   return (
     <main className="section">
@@ -6,58 +13,34 @@ function Projects() {
         <ul className="projects">
           <li className="project">
             <a href="./project-page.html">
-              <img
-                src="./img/projects/01.jpg"
-                alt="Project img"
-                className="project__img"
-              />
-              <h3 className="project__title">Gaming streaming portal</h3>
+              <img src={cooking} alt="Project img" className="project__img" />
+              <h3 className="project__title">Whats Cooking</h3>
             </a>
           </li>
           <li className="project">
             <a href="./project-page.html">
-              <img
-                src="./img/projects/02.jpg"
-                alt="Project img"
-                className="project__img"
-              />
-              <h3 className="project__title">Video service</h3>
+              <img src={mapty} alt="Project img" className="project__img" />
+              <h3 className="project__title">mapty</h3>
             </a>
           </li>
           <li className="project">
             <a href="./project-page.html">
-              <img
-                src="./img/projects/03.jpg"
-                alt="Project img"
-                className="project__img"
-              />
-              <h3 className="project__title">Video portal</h3>
+              <img src={pig_game} alt="Project img" className="project__img" />
+              <h3 className="project__title">Pig Game</h3>
             </a>
           </li>
 
           <li className="project">
-            <img
-              src="./img/projects/04.jpg"
-              alt="Project img"
-              className="project__img"
-            />
-            <h3 className="project__title">Dating app</h3>
+            <img src={bankist} alt="Project img" className="project__img" />
+            <h3 className="project__title">Bankist</h3>
           </li>
           <li className="project">
-            <img
-              src="./img/projects/05.jpg"
-              alt="Project img"
-              className="project__img"
-            />
-            <h3 className="project__title">Landing</h3>
+            <img src={guess} alt="Project img" className="project__img" />
+            <h3 className="project__title">Guess My Number</h3>
           </li>
           <li className="project">
-            <img
-              src="./img/projects/06.jpg"
-              alt="Project img"
-              className="project__img"
-            />
-            <h3 className="project__title">Gaming community</h3>
+            <img src={forkify} alt="Project img" className="project__img" />
+            <h3 className="project__title">Forkify</h3>
           </li>
         </ul>
       </div>
