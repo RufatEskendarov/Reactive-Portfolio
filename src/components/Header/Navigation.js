@@ -1,40 +1,79 @@
+import { useState, useEffect, useRef } from "react";
 import "./Navigation.css";
-
+import { NavLink } from "react-router-dom";
 import sun from "./../../img/logo/sun.svg";
 import moon from "./../../img/logo/moon.svg";
 
 function Navigation() {
+  const [darkMode, setDarkMode] = useState("light");
+  const btnRef = useRef(null);
+
+  useEffect(() => {
+    if (darkMode === "dark") {
+      document.body.classList.add("dark");
+      btnRef.current.classList.add("dark-mode-btn--active");
+    } else {
+      document.body.classList.remove("dark");
+      btnRef.current.classList.remove("dark-mode-btn--active");
+    }
+  }, [darkMode]);
+
+  const activLink = "nav-list__link nav-list__link--active";
+  const inactivLink = "nav-list__link";
+
+  const toggleDarkMode = () => {
+    setDarkMode((currentMode) => {
+      return currentMode === "light" ? "dark" : "light";
+    });
+  };
+
   return (
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
-          <a href="./index.html" className="logo">
-            <strong>Reactiv</strong> portfolio
-          </a>
+          <NavLink to="/" className="logo">
+            <strong>Reactive</strong> portfolio
+          </NavLink>
 
-          <button className="dark-mode-btn">
+          <button
+            ref={btnRef}
+            className="dark-mode-btn"
+            onClick={toggleDarkMode}
+          >
             <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
             <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
           </button>
 
           <ul className="nav-list">
             <li className="nav-list__item">
-              <a
-                href="./index.html"
-                className="nav-list__link nav-list__link--active"
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activLink : inactivLink
+                }
               >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <a href="./projects.html" className="nav-list__link">
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? activLink : inactivLink
+                }
+              >
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <a href="./contacts.html" className="nav-list__link">
+              <NavLink
+                to="./contacts"
+                className={({ isActive }) =>
+                  isActive ? activLink : inactivLink
+                }
+              >
                 Contacts
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

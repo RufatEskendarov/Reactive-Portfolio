@@ -1,11 +1,14 @@
-function Project() {
+import "./Project.css";
+import { NavLink } from "react-router-dom";
+
+function Project({ title, img, index }) {
   return (
-    <li className="project">
-      <a href="./project-page.html">
-        <img src={cooking} alt="Project img" className="project__img" />
-        <h3 className="project__title">Whats Cooking</h3>
-      </a>
-    </li>
+    <NavLink to={`/project/${index}`}>
+      <li className="project">
+        <img src={img} alt={title} className="project__img" />
+        <h3 className="project__title">{title}</h3>
+      </li>
+    </NavLink>
   );
 }
 

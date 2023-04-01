@@ -2,7 +2,7 @@ import "./Footer.css";
 
 import gitHub from "./../../img/logo/gitHub.svg";
 import linkedIn from "./../../img/logo/linkedIn.svg";
-import twitter from "./../../img/logo/twitter.svg";
+import gmail from "./../../img/logo/gmail.svg";
 
 function Footer() {
   return (
@@ -12,10 +12,7 @@ function Footer() {
           <ul className="social">
             <li className="social__item">
               <a href="#!">
-                <img
-                  src="./img/icons/twitter.svg"
-                  alt="logo with the link to direct mailing"
-                />
+                <img src={gmail} alt="logo with the link to direct mailing" />
               </a>
             </li>
             <li className="social__item">
@@ -29,7 +26,7 @@ function Footer() {
             <li className="social__item">
               <a href="https://www.linkedin.com/in/rufat-eskendarov/">
                 <img
-                  src="./img/icons/linkedIn.svg"
+                  src={linkedIn}
                   alt="logo with the link to linked in page"
                 />
               </a>
