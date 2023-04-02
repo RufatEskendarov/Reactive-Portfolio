@@ -1,7 +1,15 @@
 function Contact() {
   return (
     <main className="section">
-      <div className="container">
+      <h2>Contact Me</h2>
+      <p>To contact me please fill up form below</p>
+
+      <form>
+        <label for="#name">Name</label>
+        <input id="name" placeholder="Enter your full name" />
+        <
+      </form>
+      {/* <div className="container">
         <h1 className="title-1">Contact Me</h1>
 
         <ul className="content-list">
@@ -22,7 +30,7 @@ function Contact() {
             </p>
           </li>
         </ul>
-      </div>
+      </div> */}
     </main>
   );
 }

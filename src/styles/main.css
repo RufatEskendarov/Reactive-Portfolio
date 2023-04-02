@@ -75,6 +75,10 @@ body {
   max-width: 1200px;
 }
 
+.nav-container {
+  max-width: 1600px;
+}
+
 .none {
   display: none !important;
 }

@@ -11,12 +11,16 @@ function Footer() {
         <div className="footer__wrapper">
           <ul className="social">
             <li className="social__item">
-              <a href="#!">
+              <a href="mailto: rufat.eskendarov@gmail.com">
                 <img src={gmail} alt="logo with the link to direct mailing" />
               </a>
             </li>
             <li className="social__item">
-              <a href="https://github.com/RufatEskendarov?tab=repositories">
+              <a
+                target="_blank"
+                href="https://github.com/RufatEskendarov?tab=repositories"
+                rel="noreferrer"
+              >
                 <img
                   src={gitHub}
                   alt="logo with the link to github repository"
@@ -24,7 +28,11 @@ function Footer() {
               </a>
             </li>
             <li className="social__item">
-              <a href="https://www.linkedin.com/in/rufat-eskendarov/">
+              <a
+                href="https://www.linkedin.com/in/rufat-eskendarov/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={linkedIn}
                   alt="logo with the link to linked in page"

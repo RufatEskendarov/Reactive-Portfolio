@@ -1,11 +1,15 @@
 import { useState, useEffect, useRef } from "react";
+import { useLocalStorage } from "../../utils/useLocalStorage";
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
 import sun from "./../../img/logo/sun.svg";
 import moon from "./../../img/logo/moon.svg";
 
 function Navigation() {
-  const [darkMode, setDarkMode] = useState("light");
+  // const [darkMode, setDarkMode] = useState("light");
+
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode", "light");
+
   const btnRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +33,7 @@ function Navigation() {
 
   return (
     <nav className="nav">
-      <div className="container">
+      <div className="container nav-container">
         <div className="nav-row">
           <NavLink to="/" className="logo">
             <strong>Reactive</strong> portfolio
@@ -52,7 +56,7 @@ function Navigation() {
                   isActive ? activLink : inactivLink
                 }
               >
-                Home
+                About Me
               </NavLink>
             </li>
             <li className="nav-list__item">
@@ -62,7 +66,7 @@ function Navigation() {
                   isActive ? activLink : inactivLink
                 }
               >
-                Projects
+                Portfolio
               </NavLink>
             </li>
             <li className="nav-list__item">
@@ -72,7 +76,17 @@ function Navigation() {
                   isActive ? activLink : inactivLink
                 }
               >
-                Contacts
+                Contact Me
+              </NavLink>
+            </li>
+            <li className="nav-list__item">
+              <NavLink
+                to="./resume"
+                className={({ isActive }) =>
+                  isActive ? activLink : inactivLink
+                }
+              >
+                Resume
               </NavLink>
             </li>
           </ul>

@@ -18,7 +18,7 @@
 
 .header__wrapper {
   padding: 0 15px;
-  max-width: 660px;
+  max-width: 1200px;
 }
 
 .header__title {
@@ -40,10 +40,34 @@
 
 .header__text {
   margin-bottom: 40px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.333;
+  max-width: 900px;
+  text-align: justify;
 }
 
 .header__text p + p {
   margin-top: 0.5em;
+}
+
+.logo strong {
+  color: #5c62ec;
+}
+
+.main {
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 3px #5c62ec solid;
+  height: 14rem;
+  width: 14em;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  flex: 0 0 14rem;
+  overflow: hidden;
+  box-sizing: none;
+}
+
+.row {
+  display: flex;
+  width: 100%;
 }
