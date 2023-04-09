@@ -4,6 +4,8 @@ import locaGrey from "./../img/logo/location-grey.svg";
 import phone from "./../img/logo/phone.svg";
 import email from "./../img/logo/emailBlack.svg";
 
+import resume from "./../helpers/resume.pdf";
+
 function Resume() {
   return (
     <main className="section">
@@ -222,7 +224,9 @@ function Resume() {
           </div>
         </div>
         <div className="btn-div">
-          <button className="btn">Download CV</button>
+          <a href={resume} download="Developer_Rufat_Eskendarov_CV.pdf">
+            <button className="btn">Download CV</button>
+          </a>
         </div>
       </div>
     </main>
