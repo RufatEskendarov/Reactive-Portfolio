@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
 import Project from "./pages/Project";
 import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 import "./styles/main.css";
 import ScrollToTop from "./utils/ScrollToTop";
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<Project />} />
           <Route path="/contacts" element={<Contact />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/resume" element={<Resume />} />
         </Routes>
 
         <Footer />

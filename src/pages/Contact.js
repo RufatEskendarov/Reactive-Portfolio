@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Modal from "../components/modal/Modal";
 import { emailValidator, phoneValidator } from "./../helpers/regexValidator";
 
 function Contact() {
@@ -10,9 +11,11 @@ function Contact() {
   const [phoneErr, setPhoneErr] = useState(false);
   const [nameErr, setNameErr] = useState(false);
   const [messageErr, setMessageErr] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   function nameHandler(e) {
     let item = e.target.value;
+    setName(item);
     if (item.length < 1) {
       setNameErr(true);
     } else {
@@ -22,6 +25,7 @@ function Contact() {
 
   function phoneHandler(e) {
     let item = e.target.value.trim();
+    setPhone(item);
     if (!phoneValidator.test(item)) {
       setPhoneErr(true);
     } else {
@@ -31,6 +35,7 @@ function Contact() {
 
   function emailHandler(e) {
     let item = e.target.value.trim();
+    setEmail(item);
     if (!emailValidator.test(item)) {
       setEmailErr(true);
     } else {
@@ -40,6 +45,7 @@ function Contact() {
 
   function messageHandler(e) {
     let item = e.target.value.trim();
+    setMessage(item);
     if (item.length < 1) {
       setMessageErr(true);
     } else {
@@ -49,12 +55,42 @@ function Contact() {
 
   const submitHandler = function (e) {
     e.preventDefault();
+
+    return (
+      <div>
+        <div className="overlay"></div>
+        <div className="response">
+          <button className="btn-x">X</button>
+          <h1>Your message was sent successfuly!</h1>
+        </div>
+      </div>
+    );
   };
 
-  // const textarea = document.getElementById("textarea");
-  // const nameInput = document.getElementById("name");
-  // const phoneInput = document.getElementById("phone");
-  // const emailInput = document.getElementById("email");
+  function modalHandler() {
+    if (
+      !emailErr &&
+      !phoneErr &&
+      !nameErr &&
+      !messageErr &&
+      name !== "" &&
+      phone !== "" &&
+      email !== "" &&
+      message !== ""
+    ) {
+      const textarea = (document.getElementById("textarea").value = "");
+      const nameInput = (document.getElementById("name").value = "");
+      const phoneInput = (document.getElementById("phone").value = "");
+      const emailInput = (document.getElementById("email").value = "");
+      setEmail("");
+      setName("");
+      setMessage("");
+      setPhone("");
+      setOpenModal(true);
+    } else {
+      return;
+    }
+  }
 
   return (
     <main className="section">
@@ -118,10 +154,14 @@ function Contact() {
             )}
           </div>
           <div className="div-btn">
-            <button className="btn">SEND</button>
+            <button className="btn" type="submit" onClick={modalHandler}>
+              SEND
+            </button>
           </div>
         </form>
       </section>
+
+      {openModal && <Modal setOpenModal={setOpenModal} />}
     </main>
   );
 }

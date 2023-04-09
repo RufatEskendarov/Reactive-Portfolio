@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { projects } from "./../helpers/projectList";
-import img from "./../img/project-img/cookingBig.png";
+import app from "./../img/logo/app.svg";
 import gitHub from "./../img/logo/gitHub-black.svg";
 
 function Project() {
@@ -19,13 +19,33 @@ function Project() {
           />
 
           <div className="project-details__desc">
-            <p>Skills: React, Node.js, MongoDB</p>
+            <p>Technologies: {project.technologies}</p>
           </div>
-
-          <a href="#!" className="btn-outline">
-            <img src={gitHub} alt="" />
-            GitHub repo
-          </a>
+          <div className="project-details__desc wide">
+            <p>
+              Description: <span>{project.description}</span>
+            </p>
+          </div>
+          <div className="project-div">
+            <a
+              href={project.deploy}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+            >
+              <img src={app} alt="" />
+              Deployed page
+            </a>
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+            >
+              <img src={gitHub} alt="" />
+              GitHub repo
+            </a>
+          </div>
         </div>
       </div>
     </main>
