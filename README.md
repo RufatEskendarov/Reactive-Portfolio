@@ -51,7 +51,7 @@ Just instal NPM package run in terminal "npm install"
 
 ## Usage
 
-After NPM installation type in terminal "node .\server.js"
+After NPM installation type in terminal "npm start"
 
 ## Tests
 
@@ -79,7 +79,7 @@ This project is covered under the MIT license. To learn more about what this mea
 
 ## Deployment
 
-[GitHub Repo](https://github.com/RufatEskendarov/Reactive-Portfolio)
+[GitHub Repo](https://github.com/RufatEskendarov/Reactive-Portfolio/)
 
 [GitHub Deployed Page](https://rufateskendarov.github.io/Reactive-Portfolio/)
 
