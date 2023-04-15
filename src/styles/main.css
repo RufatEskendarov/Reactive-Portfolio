@@ -683,7 +683,7 @@ body {
   }
 
   .row {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     margin-bottom: 20px;
   }
