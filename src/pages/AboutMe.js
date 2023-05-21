@@ -14,18 +14,16 @@ function AboutMe() {
         <div className="row">
           <div className="header__text">
             <p>
-              I am from Azerbaijan (Baku), graduated from the Academy of the
-              Ministry of Emergency Situations. I have a Bachelor's degree in
-              Engineering of Emergency Situations and Life Safety. I worked as a
-              rescue and military officer in the Civil Defense Forces. Then I
-              was assigned to the position of Operations Manager at the Crisis
-              Management Center. I am currently working as a Safety and Quality
-              Control Coordinator. Two years ago I got interested in programming
-              and took a number of courses on HTML, CSS, SQL, Python, JavaScript
-              and React.js. I am also an alumnus of the Coding Boot Camp of the
-              University of New Brunswick. During the course, I strengthened my
-              knowledges in the front end and gained new knowledges in the back
-              end, I learned Data Bases such as MySQL , MongoDB and GraphQL.
+              Seeking full time position as a front end, back or full stack
+              developer with previous experience in quality control and
+              engineering. Graduate from the UNB Coding Boot Camp, adaptable and
+              passionate to learn new skills as evidenced by self study and
+              continuously learning new technologies. Bring many years of
+              experience working in a corporate culture and have demonstrated
+              abilities to perform and organize complex industrial operations
+              tasks and managed unexpected difficulties. Excited to demonstrate
+              my strong attention to detail, teamwork, and relationship building
+              skills in a developer role.
             </p>
           </div>
           <figure className="main">
