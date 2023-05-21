@@ -69,7 +69,7 @@ export default function Modal({ setOpenModal }) {
             >
               Close
             </button>
-            <NavLink className="modal-btn" to="/">
+            <NavLink className="modal-btn" to="/Reactive-Portfolio/">
               Return
             </NavLink>
           </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useLocalStorage } from "../../utils/useLocalStorage";
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
@@ -35,7 +35,7 @@ function Navigation() {
     <nav className="nav">
       <div className="container nav-container">
         <div className="nav-row">
-          <NavLink to="/" className="logo">
+          <NavLink to="/Reactive-Portfolio/" className="logo">
             <strong>Reactive</strong> portfolio
           </NavLink>
 
@@ -51,7 +51,7 @@ function Navigation() {
           <ul className="nav-list">
             <li className="nav-list__item">
               <NavLink
-                to="/about"
+                to="/Reactive-Portfolio/"
                 className={({ isActive }) =>
                   isActive ? activLink : inactivLink
                 }
