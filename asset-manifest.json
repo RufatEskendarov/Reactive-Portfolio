@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Reactive-Portfolio/static/css/main.8b247a20.css",
-    "main.js": "/Reactive-Portfolio/static/js/main.f93e93c4.js",
+    "main.js": "/Reactive-Portfolio/static/js/main.109c9462.js",
     "static/js/787.45916773.chunk.js": "/Reactive-Portfolio/static/js/787.45916773.chunk.js",
     "static/media/cookingBig.png": "/Reactive-Portfolio/static/media/cookingBig.3247d18d00e99fdfb110.png",
     "static/media/maptyBig.png": "/Reactive-Portfolio/static/media/maptyBig.351ee2b00985cda831a1.png",
@@ -33,11 +33,11 @@
     "index.html": "/Reactive-Portfolio/index.html",
     "static/media/emailBlack.svg": "/Reactive-Portfolio/static/media/emailBlack.d11775a060a5fa9092417d871cce75df.svg",
     "main.8b247a20.css.map": "/Reactive-Portfolio/static/css/main.8b247a20.css.map",
-    "main.f93e93c4.js.map": "/Reactive-Portfolio/static/js/main.f93e93c4.js.map",
+    "main.109c9462.js.map": "/Reactive-Portfolio/static/js/main.109c9462.js.map",
     "787.45916773.chunk.js.map": "/Reactive-Portfolio/static/js/787.45916773.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b247a20.css",
-    "static/js/main.f93e93c4.js"
+    "static/js/main.109c9462.js"
   ]
 }
