@@ -51,7 +51,7 @@ function Navigation() {
           <ul className="nav-list">
             <li className="nav-list__item">
               <NavLink
-                to="/"
+                to="/about"
                 className={({ isActive }) =>
                   isActive ? activLink : inactivLink
                 }
